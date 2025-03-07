@@ -98,9 +98,8 @@ Event* NotGate::update(uint64_t current_time)
 {
   char state = 'X';
   Event* e = nullptr;
-	
-		// auto w = m_inputs[0];
-		char in = m_inputs[0]->getState();
+	char in = m_inputs[0]->getState();
+
 		if(in == '1')
 		{
 			state = '0';
@@ -118,8 +117,7 @@ Event* NotGate::update(uint64_t current_time)
 	{
     m_current_state = state;
 		uint64_t next = current_time + m_delay;
-		e = new Event {next,m_output,state};
-         
+		e = new Event {next,m_output,state};   
 	}
   return e;
 }

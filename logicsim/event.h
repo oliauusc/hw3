@@ -15,8 +15,7 @@ bool operator()(Event* E1, Event* E2) const {
     if (!E1) return false;
     else if (!E2) return true;
 
-    return (E1->time > E2->time);
-    // else return true;
+    return (E1->time < E2->time);
 }
 } EventLess;
 	
