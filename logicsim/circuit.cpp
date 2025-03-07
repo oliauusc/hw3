@@ -46,7 +46,7 @@ void Circuit::test()
 	e = new Event {4,m_wires[0],'1'};
 	m_pq.push(e);
 
-  e = new Event {6,m_wires[1],'0'};
+    e = new Event {6,m_wires[1],'0'};
 	m_pq.push(e);
 	
 }
